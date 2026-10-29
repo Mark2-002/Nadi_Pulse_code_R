@@ -1,4 +1,4 @@
-# Nadi Pulse AV
+# Nadi Pulse 
 
 A Zephyr-based firmware project for the Nordic nRF54L15 DK that reads photoplethysmography (PPG) data from three MAX30102 sensors and exposes the captured waveform data over Bluetooth Low Energy (BLE).
 
@@ -73,20 +73,6 @@ This project is built using the Zephyr RTOS / nRF Connect SDK toolchain.
 
 The repository also contains a quick instruction file:
 
-- `instruction_to_build.txt`
-
-### Example build command
-
-```bash
-west build -b nrf54l15dk/nrf54l15/cpuapp . --pristine
-```
-
-### Flashing
-
-```bash
-west flash
-```
-
 ## Bluetooth details
 
 The firmware exposes a custom BLE service with a read/write/notify characteristic for app communication. The project enables peripheral mode and advertises the device as:
@@ -95,14 +81,6 @@ The firmware exposes a custom BLE service with a read/write/notify characteristi
 
 It uses a custom UUID-based service for sensor control and notifications.
 
-## Notes
-
-This repository is focused on embedded firmware and hardware interfacing rather than a generic application framework. It is intended for Nordic semiconductor development workflows and should be built in a Zephyr/nRF Connect SDK environment.
-
-## License
-
-No explicit license file was found in the repository. Please check with the repository owner before reusing or distributing the project outside the intended scope.
 
 ## Repository summary
-
 This project implements a wrist-based multi-sensor PPG measurement system on the nRF54L15 DK platform, combining hardware input from three MAX30102 sensors with BLE-based communication for downstream app integration and wireless data transfer.
