@@ -1,8 +1,6 @@
 Hi programmer,
 
 Here's Steps to build this Nadi_pulse_v3 code for nrf54l15dk/nrf54l15/cpuapp
-
-
 Step 1:- Choose Board target "nrf54l15dk/nrf54l15/cpuapp"
 Step 2:- select prj.conf [Optional selected by default]
 Step 3:- select Devicetree overlay
